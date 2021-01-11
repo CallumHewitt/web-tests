@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    border: 0px solid red;
+}
+
+nav ul {
+    list-style-type: none;
+    border: 0px dotted blue;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+inline-block allows:
+- elements to be stacked next to each other on a single line
+- maintains margin and padding and filling width properties
+*/
+nav li {
+    border: 0px solid yellow;
+    width: 10rem;
+    background-color: red;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+nav a {
+    border: 0px dotted white;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}

@@ -1,0 +1,56 @@
+  div {
+    border: 5px blue solid;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .box1 {
+    border-color: orange;
+    background-color: #ffcc00;
+    width: 25%
+  }
+  
+  .box2 {
+    background-color: lightblue;
+    width: 25rem;
+  }
+  
+  .box2 p {
+    border: 2px solid green;
+    margin-top: 0;
+  }
+
+  /* Never use height. Eventually someone will put more stuff in that the height isn't enough */
+  .box3 {
+    background-image: url("http://placekitten.com/300/300");
+    padding: 0;
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Inline element, only as wide as it's content */
+  a, strong, em {
+    border: 2px solid blue;
+  }
+
+  /* Padding is actually displayed differently in each of the below*/
+  /* Lowercase m in h1 is much bigger than p so it's distance is different*/
+  /* Using rems makes everything neat. It's a root relative m */
+  /* rem is usually 16px */
+  #remvsem {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+  #remvsem h1 {
+    background-color: green;
+    padding: 1rem;
+  }
+
+  #remvsem p {
+    background-color: blue;
+    padding: 1rem;
+  }
+
+  

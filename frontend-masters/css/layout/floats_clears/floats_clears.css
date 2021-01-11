@@ -1,0 +1,54 @@
+/*
+Images are inline elements. They are as wide as their content
+*/
+.floatleft {
+    float: left;
+    /* TRouBLe, or clockface */
+    margin: 0 1rem 1rem 0;
+}
+
+/*
+Just doing floatright for the second cage pops him out of the
+border of the article. 
+
+float pulls the image out of the content. To keep them in, we need to use 
+clear. If you float, you MUST clear.
+*/
+.floatright {
+    float: right;
+    /* TRouBLe, or clockface */
+    margin: 1rem 0 1rem 1rem;
+}
+
+/*
+We attach this clear formula on the article. This moves the border around
+the image and the text.
+
+after is a pseudoelement for the little bit of space after the article.
+
+clear both says clear to the left and right, finding the floats on either
+side.
+
+This formulae as it is is known as an incantation. It's the best way to
+clear floats from the parent.
+*/
+article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+margin: 0 auto;
+- Two numbers mean top and bottom, then left and right.
+- auto tells the browser. Calculate extra space and divide in two
+*/
+article {
+    width: 25rem;
+    border: 3px solid red;
+    margin: 0 auto;
+}
+
+aside {
+    border: 3px solid blue;    
+    width: 13rem;
+}
