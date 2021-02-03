@@ -1,3 +1,3 @@
 # Web Tests
 
-Code used for HTML, CSS and JavaScript experiments or tutorials.
+Code used for HTML, CSS and JavaScript experiments.
